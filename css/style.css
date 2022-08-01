@@ -50,8 +50,8 @@ button {
   --back-ground-color: rgba(47, 48, 58);
   --white-main-color: #ffffff;
   --back-gtound-key-kolor: #188ce8;
-  --icon-fill-color:#AFB1B8;
-  --back-ground-key-color-foot:rgba(255, 255, 255, 0.1);
+  --icon-fill-color: #afb1b8;
+  --back-ground-key-color-foot: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -124,24 +124,44 @@ body {
   padding-right: 47px;
 }
 
+/* посилання на номер телефону та е-mail */
+.site-nav-contact-header {
+  color: var(--color-link);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 102.5625%;
+  padding: 32px 0px;
+  align-items: center;
+}
+.site-nav-contact-header::before {
+  content: "";
+  margin-right: 10px;
+}
+.site-nav-contact-header:hover,
+.site-nav-contact-header:focus {
+  color: var(--logo-color);
+}
+/* покраска SVG при ховері і фокусі */
+.site-nav-contact-header:hover .header-links-svg,
+.site-nav-contact-header:focus .header-links-svg {
+  fill: var(--logo-color);
+}
+
 /* SVG */
 .header-links-svg {
   fill: var(--color-link);
   display: flex;
   justify-content: center;
+  margin-right: 10px;
 }
-.header-links-svg:focus,
-.header-links-svg:hover {
-  fill: var(--logo-color);
-}
-.perevaga-svg{
+
+.perevaga-svg {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
-  
+  background-color: #f5f4fa;
 }
 /* -------END--HEADER------------------------- */
 
@@ -244,7 +264,7 @@ body {
   text-transform: uppercase;
   display: flex;
   margin-bottom: 10px;
-  margin-top: 30px;;
+  margin-top: 30px;
 }
 .p-mainpage {
   /* font-family: "Roboto"; */
@@ -297,12 +317,10 @@ body {
   text-align: center;
 }
 
-
 /* клас всіх карток */
 .kartoteka {
   justify-content: space-between;
 }
-
 
 /* учасники */
 /* класс постер */
@@ -351,68 +369,55 @@ body {
   margin-bottom: 16px;
 }
 /* КЛАС ОПИСУ SVG */
-.social-list{
+.social-list {
   display: flex;
   gap: 10px;
   justify-content: center;
-
 }
-
 
 /* LINK SOCIAL WEB
 
   */
-.social-list-link{
+.social-list-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill:var(--icon-fill-color);
+  fill: var(--icon-fill-color);
 }
 .social-list-link:hover,
-.social-list-link:focus
-{
+.social-list-link:focus {
   background-color: var(--back-gtound-key-kolor);
 }
 
-
 .social-list-link:hover .social-link-icon,
-.social-link-link:focus .social-link-icon{
+.social-link-link:focus .social-link-icon {
   fill: var(--white-main-color);
 }
 
 /* --------------кінець класу постер---------- */
 
-
-
 /* -- C U S T O M E R S --> */
 
-
-
-.bordericon
-
-{ display: flex;
+.bordericon {
+  display: flex;
   border: 1px solid var(--icon-fill-color);
   border-radius: 4px;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   fill: var(--icon-fill-color);
 }
 .bordericon:focus,
-.bordericon:hover
-{
+.bordericon:hover {
   fill: var(--logo-color);
   border: 1px solid var(--logo-color);
 }
 
 /* <!-- C U S T O M E R S --> */
-
-
-
 
 /* класс приховування */
 .visually-hidden {
@@ -468,23 +473,6 @@ a {
 .site-nav:focus {
   color: var(--logo-color);
 }
-/* посилання на номер телефону та е-mail */
-.site-nav-contact-header {
-  color: var(--color-link);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 102.5625%;
-  padding: 32px 0px;
-  align-items: center;
-}
-.site-nav-contact-header::before {
-  content: "";
-  margin-right: 10px;
-}
-.site-nav-contact-header:hover,
-.site-nav-contact-header:focus {
-  color: var(--logo-color);
-}
 
 .button {
   padding-left: 22px;
@@ -514,11 +502,10 @@ a {
   color: var(--white-main-color);
   background-color: var(--back-gtound-key-kolor);
 
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2)
-
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-    
+
 /* задання класу на li кнопок */
 .spisok-button:not(:last-child) {
   display: flex;
@@ -556,14 +543,6 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   padding-right: 24px;
 }
 
-
-
-
-
-
-
-
-
 /* <!-- F  O  O  T  E  R  --> */
 .logo_end {
   display: flex;
@@ -592,49 +571,44 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   display: flex;
   max-width: 1600px;
 }
-.join_in{
+.join_in {
   margin-top: 15px;
   align-items: flex-start;
-
 }
-.h3foot
-{ color:var(--white-main-color);
+.h3foot {
+  color: var(--white-main-color);
   /* font-family: "Roboto"; */
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 /* КЛАСС СПИСКУ ФУТЕРА ДЛЯ РОЗЄДНАННЯ ЕЛЕМЕНТІВ */
-.flegap{
+.flegap {
   display: flex;
   gap: 70px;
 }
-.social-list-link-footer{
+.social-list-link-footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill:var(--white-main-color);
-  background-color:var(--back-ground-key-color-foot);
+  fill: var(--white-main-color);
+  background-color: var(--back-ground-key-color-foot);
 }
 .social-list-link-footer:hover,
-.social-list-link-footer:focus
-{
+.social-list-link-footer:focus {
   background-color: var(--back-gtound-key-kolor);
 }
 
-
 .social-list-link-footer:hover .social-link-icon-footer,
-.social-link-link-footer:focus .social-link-icon-footer{
+.social-link-link-footer:focus .social-link-icon-footer {
   fill: var(--white-main-color);
 }
-
-
 
 /* --------------- */
 .logo-foot {
@@ -665,12 +639,6 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   color: var(--logo-color);
 }
 
-
-
-
-
-
-
 /* PORTFOLIO */
 /* клас встановлення межі */
 .hed {
@@ -697,10 +665,9 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   border: solid 1px#eeeeee;
 }
 .cardmain:focus,
-.cardmain:hover
-{box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2)
-
+.cardmain:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 /* клас розміщення карток */
 .cards-1 {
