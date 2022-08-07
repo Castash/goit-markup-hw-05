@@ -63,9 +63,20 @@
         <div class="HERO">
           <!-- <div class="container-hero"> -->
           <h1 class="mainhead">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="buttons-head-main">
+          <!-- </button> -->
+          <button data-modal-open class="buttons-head-main">
             Замовити послугу
           </button>
+          <!-- MODALKA -->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button data-modal-close class="data-modal-close-button">
+                <svg width="18" height="18">
+                  <use href="./img/sprite.svg#icon-close-modal"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
 
           <!-- </button> -->
         </div>
@@ -74,7 +85,7 @@
         <div class="container">
           <h2 class="visually-hidden">преимущества</h2>
           <ul class="all-perevagi">
-            <li class="menu-item-1 perevaga">
+            <li class="perevaga">
               <div class="perevaga-svg">
                 <svg width="70" height="70">
                   <use href="./img/sprite.svg#icon-antenna"></use>
@@ -88,7 +99,7 @@
               </p>
             </li>
 
-            <li class="menu-item-1 perevaga">
+            <li class="perevaga">
               <div class="perevaga-svg">
                 <svg width="70" height="70">
                   <use href="./img/sprite.svg#icon-clock"></use>
@@ -101,7 +112,7 @@
               </p>
             </li>
 
-            <li class="menu-item-1 perevaga">
+            <li class="perevaga">
               <div class="perevaga-svg">
                 <svg width="70" height="70">
                   <use href="./img/sprite.svg#icon-astronaut"></use>
@@ -113,7 +124,7 @@
               </p>
             </li>
 
-            <li class="menu-item-1 perevaga">
+            <li class="perevaga">
               <div class="perevaga-svg">
                 <svg width="70" height="70">
                   <use href="./img/sprite.svg#icon-diagram"></use>
@@ -136,12 +147,15 @@
           <ul class="what_we_doing">
             <li class="menu-item-1">
               <img src="./img/box_1.jpeg" width="370" alt="box1" />
+              <p class="overlay-what_we_doing">ДЕСКТОПНІ ДОДАТКИ</p>
             </li>
             <li class="menu-item-1">
               <img src="./img/box_2.jpeg" width="370" alt="box2" />
+              <p class="overlay-what_we_doing">МОБІЛЬНІ ДОДАТКИ</p>
             </li>
             <li class="menu-item-1">
               <img src="./img/box_1.jpeg" width="370" alt="box3" />
+              <p class="overlay-what_we_doing">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
             </li>
           </ul>
         </div>
@@ -464,5 +478,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./JS/modal.js"></script>
   </body>
 </html>

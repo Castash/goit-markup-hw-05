@@ -96,6 +96,18 @@ body {
 
 .site-nav.current {
   color: var(--logo-color);
+  position: relative;
+}
+.site-nav.current::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: var(--logo-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  box-sizing: border-box;
+  bottom: 0;
 }
 /* розсунення елементів навігації */
 
@@ -141,11 +153,14 @@ body {
 .site-nav-contact-header:hover,
 .site-nav-contact-header:focus {
   color: var(--logo-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* покраска SVG при ховері і фокусі */
 .site-nav-contact-header:hover .header-links-svg,
 .site-nav-contact-header:focus .header-links-svg {
   fill: var(--logo-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* SVG */
@@ -227,8 +242,8 @@ body {
 .buttons-head-main:hover,
 .buttons-head-main:focus {
   background-color: var(--back-gtound-key-kolor);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* ----------------------------------- */
 
 /* оформлення h3 та опису */
 
@@ -249,10 +264,6 @@ body {
   width: 270px;
   height: 224px;
 }
-/* розсунення елементів навігації */
-/* .menu-item-1:not(:last-child) {
-  padding-right: 30px;
-} */
 
 .h3main-page {
   color: var(--h2-h3-text-color);
@@ -294,11 +305,36 @@ body {
 .what_we_doing {
   display: flex;
   gap: 30px;
+
   /* margin-bottom: 94px; */
   /* margin-top: 50px;
   margin-left: 30px; */
 }
+.menu-item-1 {
+  position: relative;
+}
 
+.overlay-what_we_doing {
+  overflow-x: scroll;
+  position: absolute;
+  left: 0;
+  top: 75%;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  color: var(--white-main-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  padding: 27px, 107px;
+  align-items: center;
+  justify-content: center;
+}
 /* оформлення заголовків постерів та опису */
 
 /* фон */
@@ -391,11 +427,13 @@ body {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--back-gtound-key-kolor);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover .social-link-icon,
 .social-link-link:focus .social-link-icon {
   fill: var(--white-main-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------кінець класу постер---------- */
@@ -416,6 +454,7 @@ body {
 .bordericon:hover {
   fill: var(--logo-color);
   border: 1px solid var(--logo-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* <!-- C U S T O M E R S --> */
@@ -459,6 +498,7 @@ a {
 .logo:hover,
 .logo:focus {
   color: var(--logo-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* навігація сайту */
 .site-nav {
@@ -468,6 +508,7 @@ a {
   line-height: 100%;
   padding: 32px 0px;
   margin-left: 50px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav:hover,
@@ -480,6 +521,21 @@ a {
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
+}
+.data-modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pading-boton-0 {
   padding-bottom: 0px;
@@ -505,6 +561,7 @@ a {
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* задання класу на li кнопок */
@@ -604,11 +661,13 @@ a {
 .social-list-link-footer:hover,
 .social-list-link-footer:focus {
   background-color: var(--back-gtound-key-kolor);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link-footer:hover .social-link-icon-footer,
 .social-link-link-footer:focus .social-link-icon-footer {
   fill: var(--white-main-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------- */
@@ -634,11 +693,47 @@ a {
 .adress:hover,
 .adress:focus {
   color: var(--logo-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav-contact-footer:hover,
 .site-nav-contact-footer:focus {
   color: var(--logo-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* MODALKA */
+.modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 580px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* transition: opacity 250ms cubic-bezier(cubic-bezier(0.47, 0, 0.2, 1)),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+.backdrop.is-hidden {
+  visibility: visible;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ----------------------------------- */
 
 /* PORTFOLIO */
 /* клас встановлення межі */
@@ -664,11 +759,51 @@ a {
 /* клас для завдання бордерів */
 .cardmain {
   border: solid 1px#eeeeee;
+  position: relative;
+  overflow: hidden;
 }
+
 .cardmain:focus,
 .cardmain:hover {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* OVERLAY for cart */
+.overlay-cadrmain {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 294px;
+  color: var(--white-main-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  align-items: center;
+  justify-content: center;
+  transform: translate(0, 149%);
+  transition: transform 500ms linear;
+}
+
+.overlay-cadrmain-p {
+  overflow: hidden;
+  width: 75%;
+  margin: 63px 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  transform: translate(0, 149%);
+}
+.cardmain:hover .overlay-cadrmain {
+  transform: translate(0, 0);
+}
+.cardmain:hover .overlay-cadrmain-p {
+  transform: translate(0, 0);
 }
 /* клас розміщення карток */
 .cards-1 {
