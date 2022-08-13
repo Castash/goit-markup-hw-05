@@ -292,6 +292,8 @@ body {
   line-height: 24px;
   color: var(--color-link);
 }
+/* <!-- C H I M  M I Z A U M A E M O S  --> */
+
 /* оформленян h2 чим ми займаємось */
 
 .h2-mainpage {
@@ -309,10 +311,6 @@ body {
 .what_we_doing {
   display: flex;
   gap: 30px;
-
-  /* margin-bottom: 94px; */
-  /* margin-top: 50px;
-  margin-left: 30px; */
 }
 .menu-item-1 {
   position: relative;
@@ -338,6 +336,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* <!-- C O M A N D A --> */
 /* оформлення заголовків постерів та опису */
 
 /* фон */
@@ -446,6 +445,11 @@ body {
 /* --------------кінець класу постер---------- */
 
 /* -- C U S T O M E R S --> */
+.svg27 {
+  transition-property: fill;
+  transition-duration: 2000ms;
+  transition-timing-function: linear;
+}
 
 .bordericon {
   display: flex;
@@ -456,18 +460,15 @@ body {
   width: 170px;
   height: 92px;
   fill: var(--icon-fill-color);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .bordericon:focus,
 .bordericon:hover {
   fill: var(--logo-color);
   border: 1px solid var(--logo-color);
 }
-.svg1 {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: linear;
-}
+
 /* <!-- C U S T O M E R S --> */
 
 /* класс приховування */
@@ -494,9 +495,7 @@ a {
 }
 
 /* ---------------header, footer--------- */
-.svg {
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .logo {
   color: var(--logo-color);
   font-weight: bold;
