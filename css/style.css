@@ -169,7 +169,10 @@ body {
   display: flex;
   justify-content: center;
   margin-right: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .perevaga-svg {
@@ -460,7 +463,11 @@ body {
   fill: var(--logo-color);
   border: 1px solid var(--logo-color);
 }
-
+.svg1 {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
 /* <!-- C U S T O M E R S --> */
 
 /* класс приховування */
