@@ -423,19 +423,22 @@ body {
 
   */
 .social-list-link {
+  transition: all;
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
   justify-content: center;
   align-items: center;
   fill: var(--icon-fill-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* клас SVG */
 
 .social-link-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all;
+  fill: var(--icon-fill-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
