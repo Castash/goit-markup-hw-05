@@ -422,7 +422,6 @@ body {
 
   */
 .social-list-link {
-  transition: all;
   display: flex;
   width: 44px;
   height: 44px;
@@ -435,7 +434,6 @@ body {
 /* клас SVG */
 
 .social-link-icon {
-  transition: all;
   fill: var(--icon-fill-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -460,7 +458,6 @@ body {
 } */
 
 .bordericon {
-  transition: all;
   display: flex;
   border: 1px solid var(--icon-fill-color);
   border-radius: 4px;
@@ -468,11 +465,11 @@ body {
   justify-content: center;
   width: 170px;
   height: 92px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-customers {
   fill: var(--icon-fill-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bordericon:focus,
 .bordericon:hover {
