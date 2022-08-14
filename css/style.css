@@ -468,7 +468,7 @@ body {
   height: 92px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.svg27 {
+.svg-customers {
   fill: var(--icon-fill-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -476,8 +476,8 @@ body {
 .bordericon:hover {
   border: 1px solid var(--logo-color);
 }
-.bordericon:focus .svg27,
-.bordericon:hover .svg27 {
+.bordericon:focus .svg-customers,
+.bordericon:hover .svg-customers {
   fill: var(--logo-color);
 }
 /* <!-- C U S T O M E R S --> */
