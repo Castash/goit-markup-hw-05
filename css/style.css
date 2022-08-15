@@ -418,7 +418,7 @@ body {
 .social-link {
   display: flex;
   width: 44px;
-  background-color: white;
+  background-color: var(--white-main-color);
   height: 44px;
   border-radius: 50%;
   justify-content: center;
@@ -434,11 +434,11 @@ body {
 .social-link:focus,
 .social-link:hover {
   background-color: var(--logo-color);
+  fill: var(--white-main-color);
 }
 .social-link:focus .social-icon,
 .social-link:hover .social-icon {
   fill: var(--white-main-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------кінець класу постер---------- */
